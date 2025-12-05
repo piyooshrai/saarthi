@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#166534;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#eab308;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" fill="url(#grad1)" rx="40"/>
+  <circle cx="96" cy="90" r="50" fill="#2dd4bf"/>
+  <circle cx="80" cy="80" r="10" fill="white"/>
+  <circle cx="112" cy="80" r="10" fill="white"/>
+  <circle cx="80" cy="80" r="5" fill="#1f2937"/>
+  <circle cx="112" cy="80" r="5" fill="#1f2937"/>
+  <path d="M 85 105 Q 96 115 107 105" stroke="#f97316" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="96" y="170" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">Saarthi</text>
+</svg>
