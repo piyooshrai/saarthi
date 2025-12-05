@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import { ScreenLayout } from '../components/ScreenLayout';
-import { Mascot } from '../components/Mascot';
 import { useOnboarding } from '../context/OnboardingContext';
 
 export function WelcomeScreen() {
@@ -17,21 +16,22 @@ export function WelcomeScreen() {
   };
 
   return (
-    <ScreenLayout>
-      <div className="flex-1 flex flex-col items-center justify-center text-center animate-fade-in pt-8">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-3 leading-tight text-shadow-lg">
+    <ScreenLayout backgroundImage="/assets/mascot/mascot-egg.png">
+      {/* Top content - headline */}
+      <div className="text-center animate-fade-in pt-12 md:pt-16">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight text-shadow-lg italic">
           Transform<br />Your Career
         </h1>
-        <p className="text-xl md:text-2xl text-white/95 mb-10 font-medium text-shadow">
+        <p className="text-xl md:text-2xl text-white/95 mt-4 font-medium text-shadow italic">
           One habit at a time.
         </p>
-
-        <div className="w-72 h-72 md:w-96 md:h-96 mb-8">
-          <Mascot variant="egg" />
-        </div>
       </div>
 
-      <div className="w-full max-w-md flex gap-4 animate-slide-up pb-8">
+      {/* Spacer to push buttons to bottom */}
+      <div className="flex-1" />
+
+      {/* Bottom buttons */}
+      <div className="w-full max-w-md flex gap-4 animate-slide-up pb-10">
         <button
           onClick={() => handleRoleSelect('learner')}
           className="btn-learner flex-1"
