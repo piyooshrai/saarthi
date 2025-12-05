@@ -18,29 +18,29 @@ export function WelcomeScreen() {
 
   return (
     <ScreenLayout>
-      <div className="flex-1 flex flex-col items-center justify-center text-center animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
+      <div className="flex-1 flex flex-col items-center justify-center text-center animate-fade-in pt-8">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-3 leading-tight text-shadow-lg">
           Transform<br />Your Career
         </h1>
-        <p className="text-xl text-white/90 mb-8">
+        <p className="text-xl md:text-2xl text-white/95 mb-10 font-medium text-shadow">
           One habit at a time.
         </p>
 
-        <div className="w-64 h-64 md:w-80 md:h-80 mb-8">
+        <div className="w-72 h-72 md:w-96 md:h-96 mb-8">
           <Mascot variant="egg" />
         </div>
       </div>
 
-      <div className="w-full max-w-md flex gap-4 animate-slide-up">
+      <div className="w-full max-w-md flex gap-4 animate-slide-up pb-8">
         <button
           onClick={() => handleRoleSelect('learner')}
-          className="flex-1 bg-saarthi-teal text-white rounded-3xl py-4 px-6 font-semibold text-lg transition-all hover:bg-teal-700 hover:-translate-y-0.5 active:translate-y-0"
+          className="btn-learner flex-1"
         >
           I'm a Learner
         </button>
         <button
           onClick={() => handleRoleSelect('recruiter')}
-          className="flex-1 bg-amber-400 text-gray-900 rounded-3xl py-4 px-6 font-semibold text-lg transition-all hover:bg-amber-300 hover:-translate-y-0.5 active:translate-y-0"
+          className="btn-recruiter flex-1"
         >
           I'm a Recruiter
         </button>
