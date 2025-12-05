@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ScreenLayout } from '../components/ScreenLayout';
-import { Mascot } from '../components/Mascot';
 
 export function AccountCreationScreen() {
   const navigate = useNavigate();
@@ -24,20 +23,21 @@ export function AccountCreationScreen() {
   const isFormValid = formData.fullName && formData.emailOrPhone && formData.password;
 
   return (
-    <ScreenLayout>
-      <div className="text-center mb-6 animate-fade-in pt-8">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-3 leading-tight text-shadow-lg">
+    <ScreenLayout backgroundImage="/assets/mascot/mascot-egg.png">
+      {/* Top content - headline */}
+      <div className="text-center animate-fade-in pt-8">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight text-shadow-lg">
           Create your<br />Saarthi account
         </h1>
-        <p className="text-lg md:text-xl text-white/95 font-medium text-shadow">
+        <p className="text-lg md:text-xl text-white/95 mt-3 font-medium text-shadow">
           Just a few details to get you started.
         </p>
       </div>
 
-      <div className="w-48 h-48 md:w-64 md:h-64 mb-6">
-        <Mascot variant="egg" />
-      </div>
+      {/* Spacer */}
+      <div className="flex-1" />
 
+      {/* Bottom content - form */}
       <div className="w-full max-w-md animate-slide-up pb-8">
         <div className="flex flex-col gap-4 mb-6">
           <input

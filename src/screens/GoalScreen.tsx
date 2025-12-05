@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ScreenLayout } from '../components/ScreenLayout';
-import { Mascot } from '../components/Mascot';
 import { useOnboarding } from '../context/OnboardingContext';
 import type { Goal } from '../types';
 
@@ -28,28 +27,29 @@ export function GoalScreen() {
   };
 
   return (
-    <ScreenLayout>
-      <div className="text-center mb-6 animate-fade-in pt-8">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-3 leading-tight text-shadow-lg italic">
+    <ScreenLayout backgroundImage="/assets/mascot/mascot-goal.png">
+      {/* Top content - headline */}
+      <div className="text-center animate-fade-in pt-8">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight text-shadow-lg italic">
           What's your goal?
         </h1>
-        <p className="text-lg md:text-xl text-white/95 font-medium text-shadow">
+        <p className="text-lg md:text-xl text-white/95 mt-3 font-medium text-shadow">
           You can change this anytime.
         </p>
       </div>
 
-      <div className="w-56 h-56 md:w-72 md:h-72 mb-8">
-        <Mascot variant="goal" />
-      </div>
+      {/* Spacer */}
+      <div className="flex-1" />
 
+      {/* Bottom content - options and button */}
       <div className="w-full max-w-md animate-slide-up pb-8">
-        <div className="flex flex-col gap-4 mb-8">
-          <div className="flex gap-4">
+        <div className="flex flex-col gap-3 mb-6">
+          <div className="flex gap-3">
             {goals.slice(0, 2).map((goal) => (
               <button
                 key={goal.id}
                 onClick={() => handleSelect(goal.id)}
-                className={`btn-secondary flex-1 py-5 text-base font-semibold ${
+                className={`btn-secondary flex-1 py-4 text-base font-bold ${
                   selected === goal.id ? 'selected' : ''
                 }`}
               >
@@ -59,7 +59,7 @@ export function GoalScreen() {
           </div>
           <button
             onClick={() => handleSelect(goals[2].id)}
-            className={`btn-secondary w-full py-5 text-base font-semibold ${
+            className={`btn-secondary w-full py-4 text-base font-bold ${
               selected === goals[2].id ? 'selected' : ''
             }`}
           >
