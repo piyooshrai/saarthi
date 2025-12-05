@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icons/*.svg', 'assets/**/*'],
+      includeAssets: ['icons/*.svg'],
       manifest: {
         name: 'Saarthi - Transform Your Career',
         short_name: 'Saarthi',
