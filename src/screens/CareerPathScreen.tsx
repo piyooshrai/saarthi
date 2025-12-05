@@ -30,7 +30,7 @@ export function CareerPathScreen() {
   };
 
   return (
-    <ScreenLayout backgroundImage="/assets/mascot/mascot-career.png">
+    <ScreenLayout mascotImage="/assets/mascot/mascot-career.png">
       {/* Top content - headline */}
       <div className="text-center animate-fade-in pt-6">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight text-shadow-lg italic">

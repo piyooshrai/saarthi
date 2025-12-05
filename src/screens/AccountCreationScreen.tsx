@@ -23,7 +23,7 @@ export function AccountCreationScreen() {
   const isFormValid = formData.fullName && formData.emailOrPhone && formData.password;
 
   return (
-    <ScreenLayout backgroundImage="/assets/mascot/mascot-egg.png">
+    <ScreenLayout mascotImage="/assets/mascot/mascot-egg.png">
       {/* Top content - headline */}
       <div className="text-center animate-fade-in pt-8">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight text-shadow-lg">

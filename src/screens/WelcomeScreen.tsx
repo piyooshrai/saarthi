@@ -16,7 +16,7 @@ export function WelcomeScreen() {
   };
 
   return (
-    <ScreenLayout backgroundImage="/assets/mascot/mascot-egg.png">
+    <ScreenLayout mascotImage="/assets/mascot/mascot-egg.png">
       {/* Top content - headline */}
       <div className="text-center animate-fade-in pt-12 md:pt-16">
         <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight text-shadow-lg italic">
