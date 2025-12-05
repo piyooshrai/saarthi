@@ -27,7 +27,7 @@ export function TimeCommitmentScreen() {
   };
 
   return (
-    <ScreenLayout backgroundImage="/assets/mascot/mascot-time.png">
+    <ScreenLayout mascotImage="/assets/mascot/mascot-time.png">
       {/* Top content - headline */}
       <div className="text-center animate-fade-in pt-8">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight text-shadow-lg italic">

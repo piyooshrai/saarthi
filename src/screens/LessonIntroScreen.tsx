@@ -10,7 +10,7 @@ export function LessonIntroScreen() {
   };
 
   return (
-    <ScreenLayout backgroundImage="/assets/mascot/mascot-celebration.png">
+    <ScreenLayout mascotImage="/assets/mascot/mascot-celebration.png">
       <Confetti />
 
       {/* Top content - headline */}

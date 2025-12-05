@@ -27,7 +27,7 @@ export function GoalScreen() {
   };
 
   return (
-    <ScreenLayout backgroundImage="/assets/mascot/mascot-goal.png">
+    <ScreenLayout mascotImage="/assets/mascot/mascot-goal.png">
       {/* Top content - headline */}
       <div className="text-center animate-fade-in pt-8">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight text-shadow-lg italic">
