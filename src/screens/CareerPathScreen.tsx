@@ -32,25 +32,25 @@ export function CareerPathScreen() {
 
   return (
     <ScreenLayout>
-      <div className="text-center mb-4 animate-fade-in">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight italic">
+      <div className="text-center mb-4 animate-fade-in pt-6">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-3 leading-tight text-shadow-lg italic">
           What would you<br />like to become?
         </h1>
-        <p className="text-lg text-white/90">
+        <p className="text-lg md:text-xl text-white/95 font-medium text-shadow">
           Pick one to start—you can change paths anytime.
         </p>
       </div>
 
-      <div className="w-48 h-48 md:w-56 md:h-56 mb-4">
+      <div className="w-48 h-48 md:w-64 md:h-64 mb-6">
         <Mascot variant="career" />
       </div>
 
-      <div className="w-full max-w-md grid grid-cols-2 gap-3 animate-slide-up">
+      <div className="w-full max-w-md grid grid-cols-2 gap-3 animate-slide-up pb-8">
         {careerPaths.map((path) => (
           <button
             key={path.id}
             onClick={() => handleSelect(path.id)}
-            className={`btn-secondary py-3 px-4 text-sm md:text-base transition-all ${
+            className={`btn-secondary py-4 px-5 text-sm md:text-base font-semibold transition-all ${
               selected === path.id ? 'selected' : ''
             }`}
           >

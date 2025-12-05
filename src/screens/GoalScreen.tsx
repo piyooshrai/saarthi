@@ -23,33 +23,33 @@ export function GoalScreen() {
 
   const handleContinue = () => {
     if (selected) {
-      navigate('/lesson-intro');
+      navigate('/account-creation');
     }
   };
 
   return (
     <ScreenLayout>
-      <div className="text-center mb-4 animate-fade-in">
-        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight italic">
+      <div className="text-center mb-6 animate-fade-in pt-8">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-3 leading-tight text-shadow-lg italic">
           What's your goal?
         </h1>
-        <p className="text-lg text-white/90">
+        <p className="text-lg md:text-xl text-white/95 font-medium text-shadow">
           You can change this anytime.
         </p>
       </div>
 
-      <div className="w-48 h-48 md:w-56 md:h-56 mb-6">
+      <div className="w-56 h-56 md:w-72 md:h-72 mb-8">
         <Mascot variant="goal" />
       </div>
 
-      <div className="w-full max-w-md animate-slide-up">
-        <div className="flex flex-col gap-3 mb-8">
-          <div className="flex gap-3">
+      <div className="w-full max-w-md animate-slide-up pb-8">
+        <div className="flex flex-col gap-4 mb-8">
+          <div className="flex gap-4">
             {goals.slice(0, 2).map((goal) => (
               <button
                 key={goal.id}
                 onClick={() => handleSelect(goal.id)}
-                className={`btn-secondary flex-1 py-4 ${
+                className={`btn-secondary flex-1 py-5 text-base font-semibold ${
                   selected === goal.id ? 'selected' : ''
                 }`}
               >
@@ -59,7 +59,7 @@ export function GoalScreen() {
           </div>
           <button
             onClick={() => handleSelect(goals[2].id)}
-            className={`btn-secondary w-full py-4 ${
+            className={`btn-secondary w-full py-5 text-base font-semibold ${
               selected === goals[2].id ? 'selected' : ''
             }`}
           >

@@ -5,6 +5,7 @@ import { WelcomeScreen } from './screens/WelcomeScreen';
 import { CareerPathScreen } from './screens/CareerPathScreen';
 import { TimeCommitmentScreen } from './screens/TimeCommitmentScreen';
 import { GoalScreen } from './screens/GoalScreen';
+import { AccountCreationScreen } from './screens/AccountCreationScreen';
 import { LessonIntroScreen } from './screens/LessonIntroScreen';
 import { DashboardScreen } from './screens/DashboardScreen';
 import { RecruiterDashboardScreen } from './screens/RecruiterDashboardScreen';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/career-path" element={<CareerPathScreen />} />
           <Route path="/time-commitment" element={<TimeCommitmentScreen />} />
           <Route path="/goal" element={<GoalScreen />} />
+          <Route path="/account-creation" element={<AccountCreationScreen />} />
           <Route path="/lesson-intro" element={<LessonIntroScreen />} />
           <Route path="/dashboard" element={<DashboardScreen />} />
           <Route path="/recruiter-dashboard" element={<RecruiterDashboardScreen />} />

@@ -14,27 +14,27 @@ export function LessonIntroScreen() {
     <ScreenLayout>
       <Confetti />
 
-      <div className="text-center mb-4 animate-fade-in">
-        <p className="text-lg text-white/90 mb-2">
+      <div className="text-center mb-6 animate-fade-in pt-8">
+        <p className="text-lg text-white/95 mb-2 font-semibold text-shadow">
           Day 1 · Lesson 1
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-3 leading-tight">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight text-shadow-lg">
           Introductions
         </h1>
-        <p className="text-lg text-white/90">
+        <p className="text-lg md:text-xl text-white/95 font-medium text-shadow">
           Master the art of introducing<br />yourself with confidence.
         </p>
       </div>
 
       <div className="flex-1 flex items-center justify-center">
         <div className="relative">
-          <div className="w-56 h-56 md:w-72 md:h-72">
+          <div className="w-64 h-64 md:w-80 md:h-80">
             <Mascot variant="celebration" />
           </div>
           {/* Gold coin/star decoration */}
-          <div className="absolute -right-4 bottom-8 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center shadow-lg animate-bounce-in">
+          <div className="absolute -right-4 bottom-8 w-14 h-14 bg-amber-400 rounded-full flex items-center justify-center shadow-lg animate-bounce-in">
             <svg
-              className="w-6 h-6 text-white"
+              className="w-7 h-7 text-white"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -44,7 +44,7 @@ export function LessonIntroScreen() {
         </div>
       </div>
 
-      <div className="w-full max-w-md animate-slide-up">
+      <div className="w-full max-w-md animate-slide-up pb-8">
         <button
           onClick={handleStartChallenge}
           className="btn-primary w-full flex items-center justify-center gap-2"
